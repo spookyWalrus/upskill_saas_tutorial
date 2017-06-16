@@ -41,7 +41,10 @@ gem 'hirb', '0.7.3'
 #Use Devise for authentication
 gem 'devise', '4.2.0'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> user_memberships
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
