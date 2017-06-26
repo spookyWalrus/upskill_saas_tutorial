@@ -10,7 +10,7 @@ ActionMailer::Base.smtp_settings = {
     :address    => ENV['MAILGUN_SMTP_SERVER'],
     :user_name  => ENV['MAILGUN_SMTP_LOGIN'],
     :password   => ENV['MAILGUN_SMTP_PASSWORD'],
-    :domain     => 'obscure-castle-25165.herokuapp.com',
+    :domain     => 'fathomless-harbor-10400.herokuapp.com',
     :authentication => :plain,
 }
 
