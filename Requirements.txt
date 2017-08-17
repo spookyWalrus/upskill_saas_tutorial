@@ -1,0 +1,8 @@
+We want users to choose Basic or Pro plan right away from the Home page before
+clicking Sign Up
+
+Memberships
+*User should see link for Basic Plan on home page
+*User should see link for Pro plan on home page
+* Basic Plan link should point to regular Devise Sign up form
+* Pro Plan link should point to custom sign up form
