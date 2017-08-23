@@ -2,7 +2,17 @@ We want users to choose Basic or Pro plan right away from the Home page before
 clicking Sign Up
 
 Memberships
-*User should see link for Basic Plan on home page
-*User should see link for Pro plan on home page
-* Basic Plan link should point to regular Devise Sign up form
-* Pro Plan link should point to custom sign up form
+*User should see link for Basic Plan on home page.
+*User should see link for Pro plan on home page.
+* Basic Plan link should point to regular Devise Sign up form.
+* Pro Plan link should point to custom sign up form.
+
+Stripe integration
+* Users should have a Stripe customer token in their users table
+* Javascript should prevent Pro form from submitting when user fills it out,
+and should  send card info to Stripe.  Stripe will return a card token.
+* Javscript should send user fields and card token to our Rails app. Rails app 
+should validate the user fields. Rails app will note whether user is Plan 1 or Plan 2.
+* Once validated, Rails should send user info (email, plan id) and card token to 
+Stripe server and Stripe will create a subscription and send back a customer token.
+Rails should save customer token and user info to our database.
